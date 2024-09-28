@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..700&display=swap'); 
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+.root {
+    display: none;
+    perspective: 600px;
+}
+
+.pausemenu {
+    width: 27vh;
+    position: absolute;
+    transition: 0.1s;
+    transform-style: flat;
+}
+
+::selection {
+    color: #16FF8F;
+}
+
+.pausemenu-leftside {
+    float: left;
+}
+
+.pausemenu-border {
+    float: left;
+    width: 0.5vh;
+    height: 28.5vh;
+    background-color: rgba(66, 68, 68, 0.3) !important;
+	border: 1px solid rgba(55, 55, 55, 1);
+    box-shadow: 0 0 1vh rgba(0, 0, 0, 0.3);
+    z-index: 5;
+}
+
+.pausemenu-rightside {
+    float: right;
+}
+
+.rightside-charactername {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: -2vh;
+}
+
+.characternameicon {
+    margin-right: 8px;
+    color: #04FFC7;
+    text-shadow: 0 0 6px #04FFC7;
+}
+
+.charactername {
+    font-weight: 500;
+}
+
+.rightside-buttons {
+    width: 22.6vh;
+    height: 21vh;
+    z-index: 9;
+}
+
+.button {
+    position: relative;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    margin-top: 1.4vh;
+    background: linear-gradient(145deg, rgba(66, 68, 68, 0.5), rgba(30, 30, 30, 0.7));
+    box-shadow: 0.5vh 0.5vh 1vh rgba(0, 0, 0, 0.7), inset -0.2vh -0.2vh 0.5vh rgba(255, 255, 255, 0.1);
+    font-size: 2.4vh;
+    transition: 0.3s ease-out;
+    font-weight: 700;
+    z-index: 10;
+    font-family: 'Inter', sans-serif;
+    border-radius: 5px; 
+}
+
+.button:hover {
+    border: 2px solid transparent;
+    border-image: linear-gradient(to left, rgba(4, 255, 199, 0.9), rgba(4, 255, 199, 0));
+    border-image-slice: 1;
+    box-shadow: 0 0 0.3vh #9affd0;
+    width: 105%;
+    font-size: 2.5vh;
+    transition: 0.5s;
+    z-index: 11; 
+    transform: translateY(-0.2vh); 
+
+}
+
+.button:active {
+    box-shadow: inset 0.5vh 0.5vh 0.8vh rgba(0, 0, 0, 0.9), inset -0.2vh -0.2vh 0.5vh rgba(255, 255, 255, 0.1);
+    transform: translateY(0.2vh); 
+}
+
+
+.button-icon {
+    margin: 0px 1vh 0px 2vh;
+}
